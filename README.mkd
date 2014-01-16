@@ -1,0 +1,72 @@
+Melbourne University Availability System
+========================================
+
+Outline
+--------
+
+The source code to the Melbourne University Availability System. Which can be
+found at [here](http://smart.studentit.unimelb.edu.au). The purpose of the site
+is to show students where there are available computers around the campus.
+Through AJAX calls the front end pages would update every 30 seconds.
+
+External analytics were not applied to any of the pages so that the site would
+be easily accesible behind the university proxy.
+
+The site connects to an audit trail and searches for the availability of
+computers it has in its internal database.
+
+The internal database is populated through an 'installation script' that reads a
+csv file containing a list of the names of all the computers it should look for
+in the audit trail.
+
+Notable files
+-------------
+
+- index.php is the main interface, its purpose is to be viewed by students around
+campus on their mobiles. It was made to be responsive through media queries and
+elastic design which was novel at the time.
+
+- landscape.php is a secondary interface, it is made for landscape oriented
+monitors placed around campus. The software behind the monitors used IE7, so it
+was minimally styled.
+
+- lcd.php is another secondary interface, it is made for portrait oriented
+monitors placed around campus. As with the landscape version the software
+monitors used IE7, so it was minimally styled.
+
+- locations.php is a simple HTML/XML interface that was called by the front end
+interfaces through AJAX calls.
+
+History
+-------
+
+This site has undergone a few changes since its first iteration. The first
+inlcuded the availability of short-term laptop loans through the library. When
+this scheme was discontinued, changes were made to the front end to reflect
+this. The site received a facelift when the university decided to rebrand
+Student IT's web pages.
+
+The original commit to the original git repository seems to have been made at
+Mon Mar 7 20:18:27 2011 +1100. As I am now posting the source code on GitHub,
+I've removed 'sensitive' information from the source.
+
+This was a project that I did over the winter break because I worked for the
+student facing IT support attached to the libraries. At the time there was
+feedback from students that they wanted an app or a mobile site on their new
+iPhones that would do this functionality. There were rumours that the main
+Melbourne University IT support were going to work on this, but it didn't
+eventuate.
+
+My immediate boss and I found out that the University had an audit trail to
+track the usage of the computers around campus. I noted how this data could be
+co-opted into an availability system. My boss was enthusiastic when I suggested
+that we create this Availability system ourselves.
+
+We managed to convince the central IT people to give us access to the audit
+trail and I wrote prototype in python. The powers at be were sufficiently
+impressed that they asked that the site be rewritten in PHP.
+
+I rewrote the site in PHP and after more wrangling, it was hosted centrally by
+the university. Contrary to what the posters put up around the university later
+suggested, unfortunately it wasn't really through student feedback but mostly by
+accident that this site was made.

@@ -1,0 +1,98 @@
+html {
+    text-size-adjust: none;
+    height: 100%;
+}
+
+body { 
+    font-family: Arial, serif;
+    background-color: #FFFFFF;
+    color: #000000;
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+
+    font-size: 1.2em;
+    line-height: 3em;
+}
+
+
+a {
+    color: #000000;
+}
+
+#header {
+    margin-left: 10px;
+
+	background-color: #FFFFFF; 
+	max-height: 66px;
+	height: 66px;
+	margin-right: 0px;
+}
+
+#content {
+    vertical-align: bottom;
+    padding: 10px;
+}
+
+
+#footer {
+    margin-top: 20px;
+    margin-bottom: 10px;    
+    border-top: 2px solid #CCC;
+    padding-top: 10px;
+    text-align: center;
+    color: #666;
+    font-size: 10px;
+}
+#footer p {
+    padding: 0px;
+    margin: 0px;    
+}
+#footer a {
+    color: #666;
+}
+
+#list {
+    padding: 0px 10px 0px 10px; 
+}
+
+#list table {
+    vertical-align: middle;
+    width: 100%;
+    border: 2px solid #004182;
+}
+
+#list table tr td {
+    border: 2px solid #004182;
+}
+
+#list table tr td span.avail {
+	color: black;
+}
+
+#list table tr td span.out {
+	color: #888;
+}
+
+#list table tr td a {
+    color: #004182;
+
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+    padding-right: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #FFFFFF;
+    
+    background-position: center right;
+    background-repeat: no-repeat;
+}
+
+.availability-page-header {
+    padding: 0px;
+    background-image: url('../images/avail_32.gif');
+    background-repeat: no-repeat;
+    background-position: center left;
+}
